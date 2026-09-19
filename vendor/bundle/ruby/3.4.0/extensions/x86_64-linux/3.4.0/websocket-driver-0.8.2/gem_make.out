@@ -1,0 +1,18 @@
+current directory: /home/neko/rails/NekoSummer/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/neko/rails/NekoSummer/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260919-30712-8gj5c8 sitelibdir\=./.gem.20260919-30712-8gj5c8 clean
+
+current directory: /home/neko/rails/NekoSummer/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260919-30712-8gj5c8 sitelibdir\=./.gem.20260919-30712-8gj5c8
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/neko/rails/NekoSummer/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260919-30712-8gj5c8 sitelibdir\=./.gem.20260919-30712-8gj5c8 install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20260919-30712-8gj5c8
+
+current directory: /home/neko/rails/NekoSummer/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260919-30712-8gj5c8 sitelibdir\=./.gem.20260919-30712-8gj5c8 clean
