@@ -16,4 +16,80 @@
 
 body {
     font-family: 'JetBrains Mono Nerd', monospace;
+    background: linear-gradient(135deg, #55FFCF, #05FFFF);
+    margin: 0;
+    min-height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    /* 整页背景模糊 */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.card {
+    width: min(90vw, 420px);
+    padding: 32px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* 圆形按钮之间的距离 */
+    flex-wrap: wrap;
+    margin: 32px 0;
+}
+
+/* 毛玻璃圆形按钮 */
+.glass-btn-round {
+    /* 1. 核心：宽高相等 + 50% 圆角 */
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+
+    /* 2. 让里面的图标/文字绝对居中 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.4rem; /* 图标大小 */
+    text-decoration: none;
+    cursor: pointer;
+
+    /* 3. 毛玻璃核心质感 */
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #1a1a1a; /* 根据你背景深浅调整，背景暗改成 #fff */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    /* 4. 丝滑过渡 */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 悬停效果：放大 + 变亮 + 阴影加深 */
+.glass-btn-round:hover {
+    background: rgba(255, 255, 255, 0.45);
+    transform: scale(1.12) translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+/* 点击时按压效果 */
+.glass-btn-round:active {
+    transform: scale(0.95);
 }

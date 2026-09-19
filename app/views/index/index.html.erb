@@ -1,2 +1,14 @@
-<h1><%= @neko_summer_title %></h1>
-<p> QAQ 网站当前正在开发中... </p>
+<div class="overlay">
+  <div>
+    <h1 style="font-size: 34px"><%= @neko_summer_title %></h1>
+    <p style="font-size: 19px;"><%= simple_format @text_one %></p> <%# 多行文字, 无需重复写<p></p>标签 %>
+  </div>
+  <div class="button-group">
+    <div class="glass-btn-round">
+      <%= link_to "https://qm.qq.com/q/e2P5pGBgnS", target: "_blank", rel: "noopener noreferrer" do %>
+        <i class="fa-brands fa-qq"></i>
+      <% end %>
+    </div>
+  </div>
+</div>
+<%# 懒狗官网 （ %>
